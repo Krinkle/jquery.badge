@@ -2,11 +2,11 @@
 <html>
 <head>
 	<title>Test page</title>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script src="jquery.badge.js"></script>
-	<link rel="stylesheet" type="text/css" href="jquery.badge.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+	<script src="../jquery.badge.js"></script>
+	<link rel="stylesheet" href="../jquery.badge.css">
 	<script>
-		$( document ).ready( function() {
+		$( function() {
 			$( "#default" ).badge( 1 );
 			$( "#top" ).badge( 2, 'top' );
 			$( "#bottom" ).badge( 3, 'bottom' );
@@ -32,7 +32,6 @@
 	</style>
 </head>
 <body>
-
 	<h3>Default</h3>
 	<code>$( "#default" ).badge( 1 );</code><br/>
 	<div id="default" class="button">Default</div>
@@ -60,6 +59,5 @@
 	<h3>Text</h3>
 	<code>$( "#text" ).badge( 'New' );</code><br/>
 	<div id="text" class="button">Text</div>
-
 </body>
 </html>
